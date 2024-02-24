@@ -1,0 +1,21 @@
+version: "3"
+services:
+  qemu:
+    container_name: qemu
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      RAM_SIZE: "1G"
+      CPU_CORES: "1"
+      DISK_SIZE: "16G"
+    devices:
+      - /dev/kvm
+    device_cgroup_rules:
+      - 'c *:* rwm'
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 8006:8006
+    stop_grace_period: 2m
+    restart: on-failure
