@@ -1,4 +1,12 @@
-Este *write-up* contém a solução para o POST da GET de Virtualização e Docker.
+# POST Virtualização e Docker - Olá, ARM!
+Olá! Este *write-up* contém a solução para o POST da GET de Virtualização e Docker do processo seletivo do [GRIS (Grupo de Respostas a Incidentes de Segurança)](https://blog.gris.dcc.ufrj.br/) da Universidade Federal do Rio de Janeiro.
+
+## Enunciado
+Escreva um programa simples (Um "ola mundo" é suficiente) em C, porém ele é cross compiled de x86 pra ARM (qualquer ARM).
+- Use o qemu para testar ele.
+- Bote o binário de arm e o qemu dentro de um container docker.
+- Faça um repositório no git para o projeto e teste que o container executa o aplicativo compilado para ARM
+- Envie o link para o repositório (pode deixar público mesmo)
 
 ## Configurando o ambiente
 A fim de realizar a compilação e teste do programa que será feito, temos que realizar a instalação dos seguintes programas:
